@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+
+<!-- Content Block -->
+{% block page_title %} Home {% endblock %}
+
+<!-- Content -->
+{% block content %}
+
+    <div class="container-fluid">
+	<div class="row">
+
+        {% for sensor in sensors %}
+            {% if loop.index is divisibleby 2 %}
+                <div class="col-md-4 align-self-center text-center bg-light">
+            {% else %}
+                <div class="col-md-4 align-self-center text-center bg-danger">
+            {%  endif %}
+
+                <div class="row">
+                    <div class="col-md-9">
+                        <h1 class="text-primary text-center">
+                           {{ sensor_data[sensor]['current_temperature'] }}
+                        </h1>
+
+                    </div>
+                    <div class="col-md-3 align-middle">
+                        <span class="align-middle">
+                        <h5 class="text-info text-center ">
+                            min: {{ sensor_data[sensor]['min_temperature'] }}  <br />
+                            max: {{ sensor_data[sensor]['max_temperature'] }}
+                        </h5>
+
+                            </span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3 class="text-primary text-left">
+                           {{ sensor_data[sensor]['relative_humidity'] }} r/h
+                        </h3>
+                    </div>
+                    <div class="col-md-6">
+                        <h3 class="text-primary text-right">
+                           lux: {{ sensor_data[sensor]['lux'] }}
+                        </h3>
+                    </div>
+                </div>
+                <h3 class="text-center text-primary">
+                    {{ sensor_data[sensor]['name'] }}
+                </h3>
+            </div>
+
+            {% endfor %}
+    </div>
+	</div>
+{% endblock %}

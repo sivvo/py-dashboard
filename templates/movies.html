@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+<!-- Content Block -->
+{% block page_title %} Movies {% endblock %}
+
+<!-- Content -->
+{% block content %}
+	<div class="container">
+		<div class="header"><h1>IMDB Movies</h1></div>
+		<hr />
+
+		<!-- Table -->
+		<table class="table table-hover">
+			<tr>
+				<th>Movie</th>
+				<th>Critical Reviews</th>
+				<th>Duration (minutes)</th>
+				<th>IMDB Score</th>
+			</tr>
+
+			{% for movie in movie_names %}
+			<tr>
+				<td>{{ movie }}</td>
+				<td>{{ movies[movie]['critical_reviews'] }}</td>
+				<td>{{ movies[movie]['duration'] }}</td>
+				<td>{{ movies[movie]['imdb_score'] }}</td>
+			</tr>
+			{% endfor %}
+		</table>
+	</div>
+{% endblock %}

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Home</title>
+
+    <meta name="description" content="Home screen - dashboard of each tile">
+    <meta name="author" content="Martin">
+
+    <link href="../static/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../static/css/style.css" rel="stylesheet">
+
+  </head>
+  <body>
+
+
+
+    <div class="container-fluid">
+	<div class="row">
+		<div class="col-md-4">
+			<div class="row">
+				<div class="col-md-9">
+			        <h1 class="text-primary text-center">
+				       {{ temp[0][0] }}
+			        </h1>
+
+				</div>
+				<div class="col-md-3 align-middle">
+                    <span class="align-middle">
+			        <h5 class="text-info text-center ">
+				        min: {{ temp[0][1] }}  <br />
+                        max: {{ temp[0][2] }}
+			        </h5>
+
+                        </span>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+                    <h3 class="text-primary text-left">
+                       {{ temp[0][3] }} r/h
+			        </h3>
+				</div>
+				<div class="col-md-6">
+                    <h3 class="text-primary text-right">
+                       lux: {{ temp[0][4] }}
+			        </h3>
+				</div>
+			</div>
+			<h3 class="text-center text-primary">
+				{{ temp[0][5] }}
+			</h3>
+		</div>
+
+		<div class="col-md-4">
+			<div class="row">
+				<div class="col-md-9">
+			        <h1 class="text-primary text-center">
+				       {{ temp[1][0] }}
+			        </h1>
+
+				</div>
+				<div class="col-md-3 align-middle">
+                    <span class="align-middle">
+			        <h5 class="text-info text-center ">
+				        min: {{ temp[1][1] }}  <br />
+                        max: {{ temp[1][2] }}
+			        </h5>
+
+                        </span>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+                    <h3 class="text-primary text-left">
+                       {{ temp[1][3] }} r/h
+			        </h3>
+				</div>
+				<div class="col-md-6">
+                    <h3 class="text-primary text-right">
+                       lux: {{ temp[1][4] }}
+			        </h3>
+				</div>
+			</div>
+			<h3 class="text-center text-primary">
+				{{ temp[1][5] }}
+			</h3>
+		</div>
+		<div class="col-md-4">
+			<div class="row">
+				<div class="col-md-9">
+			        <h1 class="text-primary text-center">
+				       {{ temp[2][0] }}
+			        </h1>
+
+				</div>
+				<div class="col-md-3 align-middle">
+                    <span class="align-middle">
+			        <h5 class="text-info text-center ">
+				        min: {{ temp[2][1] }}  <br />
+                        max: {{ temp[2][2] }}
+			        </h5>
+
+                        </span>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+                    <h3 class="text-primary text-left">
+                       {{ temp[2][3] }} r/h
+			        </h3>
+				</div>
+				<div class="col-md-6">
+                    <h3 class="text-primary text-right">
+                       lux: {{ temp[2][4] }}
+			        </h3>
+				</div>
+			</div>
+			<h3 class="text-center text-primary">
+				{{ temp[2][5] }}
+			</h3>
+		</div>
+
+
+	</div>
+</div>
+
+<hr />
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-4">
+			<div class="row">
+				<div class="col-md-9">
+			        <h1 class="text-primary text-center">
+				       {{ temp[3][0] }}
+			        </h1>
+
+				</div>
+				<div class="col-md-3 align-middle">
+                    <span class="align-middle">
+			        <h5 class="text-info text-center ">
+				        min: {{ temp[3][1] }}  <br />
+                        max: {{ temp[3][2] }}
+			        </h5>
+
+                        </span>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+                    <h3 class="text-primary text-left">
+                       {{ temp[3][3] }} r/h
+			        </h3>
+				</div>
+				<div class="col-md-6">
+                    <h3 class="text-primary text-right">
+                       lux: {{ temp[3][4] }}
+			        </h3>
+				</div>
+			</div>
+			<h3 class="text-center text-primary">
+				{{ temp[3][5] }}
+			</h3>
+		</div>
+
+		<div class="col-md-4">
+			<div class="row">
+				<div class="col-md-9">
+			        <h1 class="text-primary text-center">
+				       {{ temp[4][0] }}
+			        </h1>
+
+				</div>
+				<div class="col-md-3 align-middle">
+                    <span class="align-middle">
+			        <h5 class="text-info text-center ">
+				        min: {{ temp[4][1] }}  <br />
+                        max: {{ temp[4][2] }}
+			        </h5>
+
+                        </span>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+                    <h3 class="text-primary text-left">
+                       {{ temp[4][3] }} r/h
+			        </h3>
+				</div>
+				<div class="col-md-6">
+                    <h3 class="text-primary text-right">
+                       lux: {{ temp[4][4] }}
+			        </h3>
+				</div>
+			</div>
+			<h3 class="text-center text-primary">
+				{{ temp[4][5] }}
+			</h3>
+		</div>
+		<div class="col-md-4">
+			<div class="row">
+				<div class="col-md-9">
+			        <h1 class="text-primary text-center">
+				       {{ temp[5][0] }}
+			        </h1>
+
+				</div>
+				<div class="col-md-3 align-middle">
+                    <span class="align-middle">
+			        <h5 class="text-info text-center ">
+				        min: {{ temp[5][1] }}  <br />
+                        max: {{ temp[5][2] }}
+			        </h5>
+
+                        </span>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+                    <h3 class="text-primary text-left">
+                       {{ temp[5][3] }} r/h
+			        </h3>
+				</div>
+				<div class="col-md-6">
+                    <h3 class="text-primary text-right">
+                       lux: {{ temp[5][4] }}
+			        </h3>
+				</div>
+			</div>
+			<h3 class="text-center text-primary">
+				{{ temp[5][5] }}
+			</h3>
+		</div>
+
+
+	</div>
+</div>
+
+    <script src="../static/js/jquery.min.js"></script>
+    <script src="../static/js/bootstrap.min.js"></script>
+    <script src="../static/js/scripts.js"></script>
+  </body>
+</html>
